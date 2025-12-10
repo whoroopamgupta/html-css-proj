@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a href="#top" class="logo" aria-label="HomePage">
+          <svg width="36" height="36" viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="48" fill="var(--accent)" />
+            <text
+              x="50"
+              y="56"
+              text-anchor="middle"
+              font-size="42"
+              fill="white"
+              font-family="Poppins, sans-serif"
+            >
+              J
+            </text>
+          </svg>
+          <span class="logo-text">Jane Doe</span>
+        </a>
+
+        <nav class="nav" role="navigation" aria-label="Main">
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-controls">
+          <label
+            for="dark-toggle"
+            class="btn-icon"
+            title="Toggle dark mode"
+            aria-hidden="false"
+          >
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="4"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <g stroke="currentColor" stroke-width="1.5">
+                <path
+                  d="M12 2v2M12 20v2M20 12h2M2 12H4M18.4 5.6l1.4-1.4M4.2 19.8l1.4-1.4M18.4 18.4l1.4 1.4M4.2 4.2l1.4 1.4"
+                />
+              </g>
+            </svg>
+          </label>
+        </div>
+      </div>
+      <label for="nav-toggle" class="hamburger" title="Open Menu">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span
+        ></span>
+      </label>
+
+      <div class="mobile-nav" aria-hidden="true">
+        <!-- <ul class="mobile-nav-list">
+          <li>About</li>
+          <li>Skills</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul> -->
+      </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Hello, I am</p>
+          <h1>Jane Doe - Frontend Developer</h1>
+          <p class="lead">I built accessible, responsive websites and delightful UI expereinces using HTML & CSS (and soom JS & Reacts).</p>
+
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+
+          <ul class="meta">
+            <li><strong>Location: </strong>Mumbai, India</li>
+            <li><strong>Experience:</strong> <time datetime="2019">2019-Present</time></li>
+          </ul>
+
+        </div>
+        <div class="hero-photo">
+          <div class="photo-wrap">
+            <img src="https://media.istockphoto.com/id/1587604256/photo/portrait-lawyer-and-black-woman-with-tablet-smile-and-happy-in-office-workplace-african.jpg?s=612x612&w=0&k=20&c=n9yulMNKdIYIQC-Qns8agFj6GBDbiKyPRruaUTh4MKs=" alt="Jane Doe">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- About -->
+     <main>
+      <section id="about" class="about conatiner section">
+        <header class="section-head">
+          <h2 id="about-title">About Me</h2>
+          <p class="section-sub">A short Introduction and professional summary.</p>
+        </header>
+
+        <div class="about-grid">
+          <article class="about-card">
+            <figure>
+              <img src=https://media.wired.com/photos/621e8c4000c61db612b05fda/4:3/w_2400,h_1800,c_limit/Gear-Set-Up-Your-Desk-Ergonomically-1315115142.jpg" alt="Working Desk">
+              <figcaption>Design & Development Workflow</figcaption>
+            </figure>
+
+            <div class="about-text">
+              <p>I am a frontend developer focussed on building clean, performative websites with great UX. I care about accessibility and delightful  micro-interactions using HTML & CSS (soon JS & React).</p>
+
+              <p>Worked with startups and agencies vuilding landing pages, dashboards, and marketing websites.</p>
+            </div>
+          </article>
+
+          <aside class="timeline">
+            <h3>Experience</h3>
+            <ol>
+              <li><time datetime="2023-06">2023</time> - Senior Fronetend Engineer @ Acme</li>
+              <li><time datetime="2021-03">2021</time> - Fronetend Engineer @ PixelCraft</li>
+              <li><time datetime="2019-07">2023</time> - Junior Fronetend Engineer @ Webstart</li>
+            </ol>
+          </aside>
+        </div>
+
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <header class="section-head">
+            <h2>Skills</h2>
+            <p class="section-sub">Technologies & tools I use frequently</p>
+          </header>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <svg class="skill-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path fill="currentColor" d="M12 17l10 5 10-5"></path>
+              </svg>
+              <h4>HTML</h4>
+              <p>Semantic markup & accessibility</p>
+            </div>
+
+            <div class="skill-card">
+              <svg class="skill-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path fill="currentColor" d="M12 17l10 5 10-5"></path>
+              </svg>
+              <h4>CSS</h4>
+              <p>Layout, Grid, Flexbox, animations</p>
+            </div>
+            <div class="skill-card">
+              <svg class="skill-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path fill="currentColor" d="M12 17l10 5 10-5"></path>
+              </svg>
+              <h4>Responsive</h4>
+              <p>Mobile-first & media queries</p>
+            </div>
+            <div class="skill-card">
+              <svg class="skill-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path fill="currentColor" d="M12 17l10 5 10-5"></path>
+              </svg>
+              <h4>Git</h4>
+              <p>Verson Control & workflows</p>
+            </div>
+            <div class="skill-card">
+              <svg class="skill-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path fill="currentColor" d="M12 17l10 5 10-5"></path>
+              </svg>
+              <h4>JavaScript</h4>
+              <p>Language of the web</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- PROJECTS -->
+       <section id="projects" class="container section">
+        <header class="section-head">
+          <h2 id="proj-title">Projects</h2>
+          <p class="section-sub">Selected Works - case studies & live demos</p>
+        </header>
+
+        <div class="projects-grid">
+          <article class="project-grid">
+            <img src="https://images.unsplash.com/photo-1648134859177-66e35b61e106?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2ViJTIwcGFnZXxlbnwwfHwwfHx8MA%3D%3D" alt="Project Screenshot">
+            <div class="card-body">
+              <h3>Landing Page Redesign</h3>
+              <p>Redesigned a SaaS landing page to increase coversions with improved content hierarchy and micro-interactions.</p>
+              <div class="card-actions">
+                <a href="#" class="btn btn-outline">View Project</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-grid">
+            <img src="https://images.unsplash.com/photo-1648134859177-66e35b61e106?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2ViJTIwcGFnZXxlbnwwfHwwfHx8MA%3D%3D" alt="Project Screenshot">
+            <div class="card-body">
+              <h3>Landing Page Redesign</h3>
+              <p>Redesigned a SaaS landing page to increase coversions with improved content hierarchy and micro-interactions.</p>
+              <div class="card-actions">
+                <a href="#" class="btn btn-outline">View Project</a>
+              </div>
+            </div>
+          </article>
+          <article class="project-grid">
+            <img src="https://images.unsplash.com/photo-1648134859177-66e35b61e106?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2ViJTIwcGFnZXxlbnwwfHwwfHx8MA%3D%3D" alt="Project Screenshot">
+            <div class="card-body">
+              <h3>Landing Page Redesign</h3>
+              <p>Redesigned a SaaS landing page to increase coversions with improved content hierarchy and micro-interactions.</p>
+              <div class="card-actions">
+                <a href="#" class="btn btn-outline">View Project</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+       </section>
+
+     </main>
+
+  </body>
+</html>
